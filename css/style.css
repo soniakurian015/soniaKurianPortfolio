@@ -203,3 +203,16 @@ button:hover {
   left: 10%;
   top: 60%;
 }
+.contact-info {
+    margin-top: 1em;
+    font-size: 0.95rem;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
