@@ -1,16 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>soniaKurian | Java Spring Boot Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sonia Kurian - Java Spring Boot Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div id="root"></div>
-  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-  <script src="js/app.js"></script>
+    <div class="background-animation">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <div id="root"></div>
+
+    <main>
+        <section>
+            <h1>Sonia Kurian</h1>
+            <p>Java Spring Boot Developer</p>
+            <button id="openModalBtn">View Project Details</button>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="experience-section">
+            <h2>Work Experience</h2>
+            <div class="experience-card">
+                <h3>IBS Software - Senior Product Engineer</h3>
+                <h4>Kochi, India | Nov 2021 - Nov 2024</h4>
+                <ul>
+                    <li>Developed, tested, and maintained features for the iCargo logistics platform using Java Spring Boot, delivering high-quality solutions for clients such as Singapore Airlines, Virgin Australia, and Bangkok Airways.</li>
+                    <li>Ensured application reliability by proactively identifying and resolving bugs within Spring Boot modules, contributing to faster incident response and reduced downtime.</li>
+                    <li>Improved system performance by optimizing database queries and addressing critical performance bottlenecks raised by stakeholders.</li>
+                    <li>Provided technical support during production cutovers, ensuring smooth deployments while following strict process adherence and backup protocols.</li>
+                    <li>Actively participated in Agile ceremonies including sprint planning, stand-ups, and retrospectives, and conducted peer code reviews to ensure clean, maintainable, and standards-compliant code.</li>
+                </ul>
+            </div>
+            <div class="experience-card">
+                <h3>Tata Consultancy Services - System Administrator</h3>
+                <ul>
+                    <li>Provided retail support to Pandora stores, enhancing operational efficiency and customer satisfaction.</li>
+                    <li>Performed troubleshooting and resolved technical issues, ensuring minimal downtime for store operations.</li>
+                    <li>Collaborated with cross-functional teams to gather requirements and streamline support processes.</li>
+                    <li>Developed and maintained documentation for standard operating procedures and system configurations.</li>
+                    <li>Conducted training sessions for end-users on system functionalities and best practices.</li>
+                    <li>Monitored system performance and conducted regular audits to identify areas for improvement.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Structure -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Project Details</h2>
+            <p>This is where the project details will be displayed. You can include technologies used, objectives, challenges, and outcomes.</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
